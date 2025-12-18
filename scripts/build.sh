@@ -12,13 +12,13 @@ echo ""
 # Vérifier les dépendances
 if ! command -v lb &> /dev/null; then
     echo "[ERREUR] live-build n'est pas installé."
-    echo "Installez-le avec : sudo apt install live-build"
+    echo "Installez-le avec : apt install live-build"
     exit 1
 fi
 
 echo "[1/5] Nettoyage de l'environnement précédent..."
 cd build
-sudo lb clean --purge
+lb clean --purge
 
 echo "[2/5] Configuration Live-Build..."
 lb config \
@@ -35,7 +35,7 @@ echo "[3/5] Copie des fichiers de configuration..."
 # Les fichiers dans build/config sont déjà en place grâce au repo
 
 echo "[4/5] Génération de l'ISO (cela peut prendre 10-30 min)..."
-sudo lb build
+lb build
 
 echo "[5/5] ISO générée avec succès!"
 echo ""
@@ -45,5 +45,5 @@ echo "Pour tester :"
 echo "  qemu-system-x86_64 -cdrom build/live-image-amd64.hybrid.iso -m 2G"
 echo ""
 echo "Pour graver sur clé USB :"
-echo "  sudo dd if=build/live-image-amd64.hybrid.iso of=/dev/sdX bs=4M status=progress"
+echo "  dd if=build/live-image-amd64.hybrid.iso of=/dev/sdX bs=4M status=progress"
 echo ""
