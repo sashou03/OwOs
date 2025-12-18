@@ -27,8 +27,8 @@ OwOs est une distribution Linux basée sur **Debian stable (Bookworm)** avec un 
 Vous avez besoin d'une **machine Debian ou Ubuntu** avec :
 
 ```bash
-sudo apt update
-sudo apt install -y git live-build debootstrap squashfs-tools xorriso
+apt update
+apt install -y git live-build debootstrap squashfs-tools xorriso
 ```
 
 ### Pour tester
@@ -84,7 +84,7 @@ qemu-system-x86_64 -cdrom build/live-image-amd64.hybrid.iso -m 2G -enable-kvm
 ⚠️ **Attention** : cela effacera toutes les données sur la clé USB !
 
 ```bash
-sudo dd if=build/live-image-amd64.hybrid.iso of=/dev/sdX bs=4M status=progress && sync
+dd
 ```
 
 Remplacez `/dev/sdX` par votre clé USB (vérifiez avec `lsblk`).
@@ -124,7 +124,7 @@ OwOs/
 Vérifiez que :
 - Vous êtes sur Debian/Ubuntu
 - `live-build` est installé
-- Vous avez les droits `sudo`
+- Vous êtes connecté en root
 - Vous avez assez d'espace disque (5 Go minimum)
 
 ---
