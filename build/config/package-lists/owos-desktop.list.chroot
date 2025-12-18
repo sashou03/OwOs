@@ -1,0 +1,32 @@
+# OwOs Desktop Packages - GNOME minimal optimisé
+
+# GNOME Core (minimal)
+gnome-core
+gnome-tweaks
+gnome-shell-extension-dash-to-dock
+
+# Navigateur
+firefox-esr
+
+# Multimedia
+vlc
+eog
+evince
+
+# Utilitaires système
+gnome-system-monitor
+file-roller
+nautilus
+baobab
+
+# Thèmes et apparence
+adwaita-icon-theme
+gnome-themes-extra
+
+# Réseau
+network-manager-gnome
+
+# Outils essentiels
+gedit
+gnome-calculator
+gnome-screenshot
