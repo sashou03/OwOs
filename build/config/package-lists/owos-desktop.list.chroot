@@ -3,7 +3,6 @@
 # GNOME Core (minimal)
 gnome-core
 gnome-tweaks
-gnome-shell-extension-dash-to-dock
 
 # Navigateur
 firefox-esr
