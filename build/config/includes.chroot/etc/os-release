@@ -1,0 +1,13 @@
+PRETTY_NAME="OwOs"
+NAME="OwOs"
+ID=owos
+ID_LIKE=""
+VERSION="1.0 (OWO)"
+VERSION_ID="1.0"
+VERSION_CODENAME=owo
+HOME_URL="https://github.com/sashou03/OwOs"
+SUPPORT_URL="https://github.com/sashou03/OwOs/issues"
+BUG_REPORT_URL="https://github.com/sashou03/OwOs/issues"
+PRIVACY_POLICY_URL="https://github.com/sashou03/OwOs"
+LOGO=owos
+ANSI_COLOR="0;37"
