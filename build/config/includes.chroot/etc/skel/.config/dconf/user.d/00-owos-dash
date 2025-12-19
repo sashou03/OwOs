@@ -1,0 +1,14 @@
+[org/gnome/shell/extensions/dash-to-dock]
+dock-position='BOTTOM'
+dock-fixed=true
+preferred-monitor=-1
+click-action='minimize-or-overview'
+apply-custom-theme=false
+running-indicator-style='DOTS'
+extend-height=false
+dash-max-icon-size=48
+transparency-mode='FIXED'
+background-opacity=0.8
+background-color='#ffffff'
+custom-theme-shrink=true
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
