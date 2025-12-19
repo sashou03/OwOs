@@ -1,0 +1,34 @@
+REGEDIT4
+
+; Configuration Wine optimisée pour OwOs
+; Paramètres pour améliorer la compatibilité Windows
+
+[HKEY_CURRENT_USER\Software\Wine\Drivers]
+"Audio"="alsa"
+"Graphics"="x11"
+
+[HKEY_CURRENT_USER\Software\Wine\Direct3D]
+"DirectDrawRenderer"="opengl"
+"OffScreenRenderingMode"="fbo"
+"VideoMemorySize"="2048"
+"Multisampling"="enabled"
+"UseGLSL"="enabled"
+"AlwaysOffscreen"="enabled"
+
+[HKEY_CURRENT_USER\Software\Wine\DllOverrides]
+"*d3d11"="native,builtin"
+"*dxgi"="native,builtin"
+"*d3d10core"="native,builtin"
+"*d3d9"="native,builtin"
+
+[HKEY_CURRENT_USER\Software\Wine\X11 Driver]
+"Decorated"="Y"
+"Managed"="Y"
+"UseTakeFocus"="Y"
+"GrabFullscreen"="Y"
+
+[HKEY_CURRENT_USER\Software\Wine\Fonts]
+"Resolution"="96"
+
+; Amélioration de la compatibilité
+[HKEY_CURRENT_USER\Software\Wine\AppDefaults]
