@@ -47,3 +47,18 @@ echo ""
 echo "Pour graver sur clé USB :"
 echo "  dd if=build/live-image-amd64.hybrid.iso of=/dev/sdX bs=4M status=progress"
 echo ""
+
+# [6/6] Intégration du support Windows
+echo "[6/6] Ajout du support Windows (Wine + WinApps)..."
+
+# Copier le script d'installation Windows
+cp scripts/install-windows-support.sh build/config/includes.chroot/usr/local/bin/
+chmod +x build/config/includes.chroot/usr/local/bin/install-windows-support.sh
+
+# Copier la configuration Wine
+mkdir -p build/config/includes.chroot/etc/owos
+cp scripts/wine.reg build/config/includes.chroot/etc/owos/
+
+echo "Support Windows intégré !"
+echo "Les utilisateurs pourront installer Wine/WinApps via : install-windows-support.sh"
+echo ""
